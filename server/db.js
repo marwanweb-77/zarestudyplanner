@@ -1,0 +1,182 @@
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const DB_FILE = path.join(__dirname, 'data', 'store.json');
+
+// Ensure data directory exists
+if (!fs.existsSync(path.join(__dirname, 'data'))) {
+  fs.mkdirSync(path.join(__dirname, 'data'), { recursive: true });
+}
+
+const defaultState = {
+  profile: {
+    name: 'Musthafa',
+    grade: 'Grade 11',
+    stream: 'PCM (Physics, Chemistry, Maths)',
+    targetHoursDaily: 4.5,
+    streak: 6,
+    xp: 2840,
+    level: 'Quantum Adept',
+    joinedDate: '2026-08-01'
+  },
+  sessions: [
+    {
+      id: 'sess-1',
+      subject: 'physics',
+      chapterId: 'phy-2',
+      chapterName: 'Motion in a Straight Line',
+      topicId: 'phy-2-2',
+      topicTitle: 'Kinematic Equations for Uniform Acceleration',
+      durationMinutes: 45,
+      date: '2026-08-28',
+      mode: 'deep-focus',
+      rating: 5,
+      notes: 'Mastered calculus derivations for v=u+at and s=ut+1/2at^2. Practiced free fall problems.',
+      timestamp: Date.now() - 86400000
+    },
+    {
+      id: 'sess-2',
+      subject: 'chemistry',
+      chapterId: 'chem-1',
+      chapterName: 'Some Basic Concepts of Chemistry',
+      topicId: 'chem-1-1',
+      topicTitle: 'Mole Concept & Molar Mass',
+      durationMinutes: 50,
+      date: '2026-08-28',
+      mode: 'concept-breakthrough',
+      rating: 4,
+      notes: 'Solved 15 stoichiometry numericals and limiting reagent problems.',
+      timestamp: Date.now() - 80000000
+    },
+    {
+      id: 'sess-3',
+      subject: 'maths',
+      chapterId: 'math-2',
+      chapterName: 'Trigonometric Functions',
+      topicId: 'math-2-2',
+      topicTitle: 'Compound Angle & Multiple Angle Formulas',
+      durationMinutes: 60,
+      date: '2026-08-29',
+      mode: 'rapid-problem-solving',
+      rating: 5,
+      notes: 'Memorized C-D formulas and transformation formulas. Clean proof of sin(A+B).',
+      timestamp: Date.now() - 36000000
+    },
+    {
+      id: 'sess-4',
+      subject: 'physics',
+      chapterId: 'phy-3',
+      chapterName: 'Motion in a Plane',
+      topicId: 'phy-3-2',
+      topicTitle: 'Projectile Motion (Ground to Ground)',
+      durationMinutes: 55,
+      date: '2026-08-29',
+      mode: 'deep-focus',
+      rating: 4,
+      notes: 'Derived range, max height, and trajectory parabola equation.',
+      timestamp: Date.now() - 14400000
+    }
+  ],
+  topicProgress: {
+    'phy-1-1': { status: 'mastered', confidence: 5, lastStudied: '2026-08-27', notes: 'Solid with base units.' },
+    'phy-1-2': { status: 'mastered', confidence: 4, lastStudied: '2026-08-27', notes: 'Formula error combinations done.' },
+    'phy-2-1': { status: 'mastered', confidence: 5, lastStudied: '2026-08-28', notes: 'Graphs x-t and v-t clear.' },
+    'phy-2-2': { status: 'mastered', confidence: 5, lastStudied: '2026-08-28', notes: 'Calculus proofs complete.' },
+    'phy-3-1': { status: 'in-progress', confidence: 4, lastStudied: '2026-08-29', notes: 'Vectors resolution in 3D.' },
+    'phy-3-2': { status: 'in-progress', confidence: 4, lastStudied: '2026-08-29', notes: 'Projectile equations done.' },
+    'chem-1-1': { status: 'mastered', confidence: 5, lastStudied: '2026-08-28', notes: 'Avogadro number and molar mass.' },
+    'chem-1-2': { status: 'mastered', confidence: 4, lastStudied: '2026-08-28', notes: 'Empirical formula determination.' },
+    'chem-2-1': { status: 'in-progress', confidence: 3, lastStudied: '2026-08-27', notes: 'Bohr energy levels Rydberg formula.' },
+    'math-1-1': { status: 'mastered', confidence: 5, lastStudied: '2026-08-26', notes: 'Venn diagrams and sets.' },
+    'math-1-2': { status: 'mastered', confidence: 4, lastStudied: '2026-08-26', notes: 'Relations cartesian product.' },
+    'math-2-1': { status: 'mastered', confidence: 5, lastStudied: '2026-08-28', notes: 'ASTC rule and radians.' },
+    'math-2-2': { status: 'in-progress', confidence: 4, lastStudied: '2026-08-29', notes: 'Multiple angle formulas.' }
+  },
+  quizResults: [
+    {
+      id: 'qr-1',
+      subject: 'physics',
+      chapterId: 'phy-1',
+      title: 'Units & Measurements Diagnostic',
+      score: 3,
+      total: 3,
+      percentage: 100,
+      timestamp: Date.now() - 172800000
+    },
+    {
+      id: 'qr-2',
+      subject: 'maths',
+      chapterId: 'math-2',
+      title: 'Trigonometry Diagnostic',
+      score: 2,
+      total: 2,
+      percentage: 100,
+      timestamp: Date.now() - 86400000
+    }
+  ],
+  zareChat: [
+    {
+      id: 'zc-1',
+      role: 'assistant',
+      text: "Greetings! I am Zare, your dedicated AI Study Assessor for Grade 11 NCERT. I monitor your study velocity across Physics, Chemistry, and Mathematics, evaluate concept retention, and test you with diagnostic NCERT quizzes.\n\nToday your study momentum is strong! Which topic would you like to assess or review?",
+      timestamp: Date.now() - 100000
+    }
+  ],
+  flashcards: [
+    {
+      id: 'fc-1',
+      subject: 'physics',
+      front: 'What is the maximum horizontal range of a projectile and at what angle does it occur?',
+      back: 'R_max = u² / g at projection angle θ = 45° (since sin 2θ = sin 90° = 1).'
+    },
+    {
+      id: 'fc-2',
+      subject: 'chemistry',
+      front: 'State the criteria for spontaneity of a reaction at constant T and P using Gibbs Free Energy.',
+      back: 'ΔG = ΔH - TΔS < 0 (negative) for a spontaneous reaction. If ΔG = 0, system is at equilibrium. If ΔG > 0, non-spontaneous.'
+    },
+    {
+      id: 'fc-3',
+      subject: 'maths',
+      front: 'Write the transformation formula for 2 sin A cos B and 2 cos A sin B.',
+      back: '2 sin A cos B = sin(A + B) + sin(A - B)\n2 cos A sin B = sin(A + B) - sin(A - B)'
+    }
+  ]
+};
+
+function readDb() {
+  try {
+    if (!fs.existsSync(DB_FILE)) {
+      fs.writeFileSync(DB_FILE, JSON.stringify(defaultState, null, 2), 'utf-8');
+      return JSON.parse(JSON.stringify(defaultState));
+    }
+    const data = fs.readFileSync(DB_FILE, 'utf-8');
+    return JSON.parse(data);
+  } catch (err) {
+    console.error('Error reading DB, restoring defaults:', err);
+    return JSON.parse(JSON.stringify(defaultState));
+  }
+}
+
+function writeDb(data) {
+  try {
+    fs.writeFileSync(DB_FILE, JSON.stringify(data, null, 2), 'utf-8');
+    return true;
+  } catch (err) {
+    console.error('Error writing DB:', err);
+    return false;
+  }
+}
+
+export const db = {
+  get: () => readDb(),
+  update: (updater) => {
+    const current = readDb();
+    const next = updater(current) || current;
+    writeDb(next);
+    return next;
+  }
+};
