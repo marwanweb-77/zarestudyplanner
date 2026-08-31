@@ -1,0 +1,685 @@
+{
+  "physics": [
+    {
+      "id": "phy-1",
+      "number": 1,
+      "name": "Units and Measurements",
+      "chapterCode": "PHY-11-01",
+      "description": "Fundamental & derived units, SI system, dimensional analysis, errors in measurement, and significant figures.",
+      "weightage": "High (Foundation)",
+      "color": "#00f2fe",
+      "topics": [
+        { "id": "phy-1-1", "title": "SI Units & Base Quantities", "concepts": ["7 Base SI units", "Supplementary units (Radian, Steradian)", "Practical units (AU, ly, pc)"] },
+        { "id": "phy-1-2", "title": "Errors in Measurement & Significant Figures", "concepts": ["Absolute, relative & percentage error", "Combination of errors (Addition, Multiplication, Power)", "Rules for significant digits", "Rounding off rules"] },
+        { "id": "phy-1-3", "title": "Dimensional Analysis & Applications", "concepts": ["Principle of homogeneity", "Checking equation correctness", "Deriving relationships among physical quantities", "Conversion of units between systems"] }
+      ],
+      "formulas": [
+        "Percentage Error = (Δa_mean / a_mean) × 100%",
+        "Error in Power: If Z = A^p B^q / C^r, then ΔZ/Z = p(ΔA/A) + q(ΔB/B) + r(ΔC/C)",
+        "Dimensional formula of Universal Gravitational Constant G = [M^-1 L^3 T^-2]",
+        "Dimensional formula of Planck's Constant h = [M L^2 T^-1]"
+      ]
+    },
+    {
+      "id": "phy-2",
+      "number": 2,
+      "name": "Motion in a Straight Line",
+      "chapterCode": "PHY-11-02",
+      "description": "Kinematics in 1D, position-time & velocity-time graphs, calculus approach, and equations of uniformly accelerated motion.",
+      "weightage": "Very High",
+      "color": "#00f2fe",
+      "topics": [
+        { "id": "phy-2-1", "title": "Position, Distance, Displacement & Speed/Velocity", "concepts": ["Scalar vs vector kinematics", "Instantaneous velocity v = dx/dt", "Average vs instantaneous acceleration a = dv/dt"] },
+        { "id": "phy-2-2", "title": "Kinematic Equations for Uniform Acceleration", "concepts": ["v = u + at", "s = ut + 1/2 at^2", "v^2 = u^2 + 2as", "Distance in nth second: s_n = u + a/2(2n - 1)"] },
+        { "id": "phy-2-3", "title": "Graphical Analysis & Motion Under Gravity", "concepts": ["Slope of x-t graph = velocity", "Area under v-t graph = displacement", "Slope of v-t graph = acceleration", "Free fall equations with g = 9.8 m/s^2"] },
+        { "id": "phy-2-4", "title": "Relative Velocity in One Dimension", "concepts": ["v_AB = v_A - v_B", "Overtaking and collision time calculations"] }
+      ],
+      "formulas": [
+        "v = u + at",
+        "s = ut + (1/2)at^2",
+        "v^2 - u^2 = 2as",
+        "s_nth = u + (a/2)(2n - 1)",
+        "Max height H = u^2 / (2g)",
+        "Time of flight T = 2u / g"
+      ]
+    },
+    {
+      "id": "phy-3",
+      "number": 3,
+      "name": "Motion in a Plane",
+      "chapterCode": "PHY-11-03",
+      "description": "Vectors algebra, dot and cross products, projectile motion in 2D, and uniform circular motion.",
+      "weightage": "Very High",
+      "color": "#00f2fe",
+      "topics": [
+        { "id": "phy-3-1", "title": "Vector Algebra & Resolution", "concepts": ["Triangle and parallelogram law of addition", "Resolution in 2D and 3D", "Unit vectors i, j, k", "Scalar and vector products"] },
+        { "id": "phy-3-2", "title": "Projectile Motion (Ground to Ground)", "concepts": ["Independence of horizontal & vertical motion", "Trajectory equation y = x tanθ - (gx^2)/(2u^2 cos^2θ)", "Time of flight, Maximum height, Horizontal range", "Complementary angles for equal range (θ and 90°-θ)"] },
+        { "id": "phy-3-3", "title": "Uniform Circular Motion", "concepts": ["Angular velocity ω = v/r", "Centripetal acceleration a_c = v^2/r = ω^2 r", "Centripetal force F = mv^2/r"] }
+      ],
+      "formulas": [
+        "Resultant R = √(A^2 + B^2 + 2AB cosθ)",
+        "tan α = (B sinθ) / (A + B cosθ)",
+        "Time of flight T = (2u sinθ) / g",
+        "Max Height H = (u^2 sin^2θ) / (2g)",
+        "Range R = (u^2 sin2θ) / g",
+        "Max Range R_max = u^2 / g at θ = 45°",
+        "Centripetal a_c = v^2 / r = ω^2 r"
+      ]
+    },
+    {
+      "id": "phy-4",
+      "number": 4,
+      "name": "Laws of Motion",
+      "chapterCode": "PHY-11-04",
+      "description": "Newton's laws, inertia, momentum, impulse, free-body diagrams, friction, and banked curves.",
+      "weightage": "Crucial / Core",
+      "color": "#00f2fe",
+      "topics": [
+        { "id": "phy-4-1", "title": "Newton's Three Laws & Momentum", "concepts": ["Law of inertia", "F = dp/dt = ma", "Action-reaction pairs", "Conservation of linear momentum"] },
+        { "id": "phy-4-2", "title": "Impulse & Free Body Diagrams (FBD)", "concepts": ["Impulse J = F Δt = Δp", "Pulley-block systems", "Apparent weight in accelerating elevators"] },
+        { "id": "phy-4-3", "title": "Friction (Static, Limiting & Kinetic)", "concepts": ["Laws of limiting friction f_s ≤ μ_s N", "Kinetic friction f_k = μ_k N", "Angle of friction & angle of repose"] },
+        { "id": "phy-4-4", "title": "Dynamics of Circular Motion & Banking", "concepts": ["Level curve max speed v = √(μ g r)", "Banked road optimum speed v_0 = √(r g tanθ)", "Banked road max safe speed with friction"] }
+      ],
+      "formulas": [
+        "F_net = m a",
+        "Impulse J = ∫ F dt = Δp",
+        "Static friction f_s(max) = μ_s N",
+        "Kinetic friction f_k = μ_k N",
+        "Level road max speed v_max = √(μ_s r g)",
+        "Banked road max speed v_max = √[ r g (μ_s + tanθ) / (1 - μ_s tanθ) ]"
+      ]
+    },
+    {
+      "id": "phy-5",
+      "number": 5,
+      "name": "Work, Energy and Power",
+      "chapterCode": "PHY-11-05",
+      "description": "Work done by constant & variable force, Work-Energy Theorem, kinetic & potential energy, conservative forces, and collisions.",
+      "weightage": "Very High",
+      "color": "#00f2fe",
+      "topics": [
+        { "id": "phy-5-1", "title": "Work Done & Work-Energy Theorem", "concepts": ["W = F · d = F d cosθ", "Work by variable force W = ∫ F dx", "W_net = ΔK = 1/2 m(v^2 - u^2)"] },
+        { "id": "phy-5-2", "title": "Potential Energy & Conservative Forces", "concepts": ["F = -dU/dx", "Gravitational potential energy U = mgh", "Elastic potential energy in spring U = 1/2 k x^2", "Conservation of mechanical energy"] },
+        { "id": "phy-5-3", "title": "Power & Collisions in 1D & 2D", "concepts": ["Instantaneous power P = F · v", "Elastic collisions (e = 1)", "Inelastic collisions (0 ≤ e < 1)", "Coefficient of restitution e = (v2 - v1) / (u1 - u2)"] }
+      ],
+      "formulas": [
+        "Work W = ∫ F · dr = F s cosθ",
+        "Work-Energy Theorem: W_total = ΔK",
+        "Spring Potential Energy U = (1/2) k x^2",
+        "Power P = dW/dt = F · v",
+        "Elastic 1D Collision: v1 = ((m1 - m2)/(m1 + m2))u1 + ((2m2)/(m1 + m2))u2",
+        "Restitution e = (v2 - v1) / (u1 - u2)"
+      ]
+    },
+    {
+      "id": "phy-6",
+      "number": 6,
+      "name": "System of Particles & Rotational Motion",
+      "chapterCode": "PHY-11-06",
+      "description": "Centre of mass, torque, angular momentum, moment of inertia, rolling motion, and theorems of MI.",
+      "weightage": "Heavyweight",
+      "color": "#00f2fe",
+      "topics": [
+        { "id": "phy-6-1", "title": "Centre of Mass (Discrete & Continuous)", "concepts": ["R_cm = Σ(m_i r_i) / Σm_i", "Velocity & acceleration of CM", "Motion of CM under external forces"] },
+        { "id": "phy-6-2", "title": "Torque & Angular Momentum", "concepts": ["Torque τ = r × F", "Angular momentum L = r × p = I ω", "Conservation of angular momentum when τ_ext = 0"] },
+        { "id": "phy-6-3", "title": "Moment of Inertia & Theorems", "concepts": ["I = Σ m_i r_i^2", "Radius of gyration k = √(I/M)", "Parallel axis theorem: I = I_cm + M d^2", "Perpendicular axis theorem: I_z = I_x + I_y"] },
+        { "id": "phy-6-4", "title": "Pure Rolling Motion on Inclined Plane", "concepts": ["v_cm = R ω", "Total KE = 1/2 M v^2 (1 + k^2/R^2)", "Acceleration down incline a = (g sinθ) / (1 + k^2/R^2)"] }
+      ],
+      "formulas": [
+        "Torque τ = r × F = I α",
+        "Angular Momentum L = I ω",
+        "Ring MI = MR^2, Disc MI = (1/2)MR^2",
+        "Solid Sphere MI = (2/5)MR^2, Hollow Sphere MI = (2/3)MR^2",
+        "Parallel Axis Theorem: I = I_cm + M d^2",
+        "Rolling Acceleration on Incline: a = (g sinθ) / [1 + (I_cm / M R^2)]"
+      ]
+    },
+    {
+      "id": "phy-7",
+      "number": 7,
+      "name": "Gravitation",
+      "chapterCode": "PHY-11-07",
+      "description": "Kepler's laws, universal gravitation, acceleration due to gravity variation, gravitational potential energy, escape and orbital speed.",
+      "weightage": "High",
+      "color": "#00f2fe",
+      "topics": [
+        { "id": "phy-7-1", "title": "Kepler's Laws & Universal Gravitation", "concepts": ["Law of Orbits, Law of Areas (dA/dt = L/2m), Law of Periods (T^2 ∝ R^3)", "F = G m1 m2 / r^2"] },
+        { "id": "phy-7-2", "title": "Variation in Acceleration Due to Gravity", "concepts": ["Altitude: g' = g (1 - 2h/R)", "Depth: g' = g (1 - d/R)", "Latitude due to Earth's rotation: g' = g - ω^2 R cos^2λ"] },
+        { "id": "phy-7-3", "title": "Gravitational Potential Energy & Escape Speed", "concepts": ["U = -G M m / r", "Escape velocity v_e = √(2 g R) ≈ 11.2 km/s", "Orbital velocity v_o = √(G M / r) = √(g R)"] }
+      ],
+      "formulas": [
+        "F = G M m / r^2",
+        "g_height = g / (1 + h/R)^2 ≈ g (1 - 2h/R)",
+        "g_depth = g (1 - d/R)",
+        "Escape velocity v_e = √(2GM/R) = √(2gR)",
+        "Orbital velocity v_o = √(GM/r)",
+        "Total energy of satellite E = -G M m / (2r)"
+      ]
+    },
+    {
+      "id": "phy-8",
+      "number": 8,
+      "name": "Mechanical Properties of Solids & Fluids",
+      "chapterCode": "PHY-11-08",
+      "description": "Stress-strain relationship, Hooke's law, Pascal's law, viscosity, surface tension, and Bernoulli's theorem.",
+      "weightage": "High",
+      "color": "#00f2fe",
+      "topics": [
+        { "id": "phy-8-1", "title": "Elasticity & Stress-Strain Curve", "concepts": ["Hooke's Law: Stress = E × Strain", "Young's modulus, Bulk modulus, Shear modulus", "Elastic potential energy density = 1/2 × stress × strain"] },
+        { "id": "phy-8-2", "title": "Fluid Statics & Pascal's Law", "concepts": ["Pressure in fluid P = P_0 + ρ g h", "Hydraulic lift principle", "Archimedes principle & buoyancy"] },
+        { "id": "phy-8-3", "title": "Fluid Dynamics & Bernoulli's Theorem", "concepts": ["Equation of continuity A1 v1 = A2 v2", "Bernoulli equation P + 1/2 ρ v^2 + ρ g h = const", "Torricelli's theorem v = √(2gh)", "Venturimeter"] },
+        { "id": "phy-8-4", "title": "Viscosity & Surface Tension", "concepts": ["Stokes' law F = 6πηrv", "Terminal velocity v_t = 2r^2(ρ - σ)g / (9η)", "Surface energy & excess pressure in drops (2T/R) and bubbles (4T/R)", "Capillary rise h = (2T cosθ) / (r ρ g)"] }
+      ],
+      "formulas": [
+        "Young's Modulus Y = (F/A) / (ΔL/L)",
+        "Continuity: A1 v1 = A2 v2",
+        "Bernoulli: P + (1/2)ρv^2 + ρgh = constant",
+        "Stokes' Law: F_viscous = 6 π η r v",
+        "Terminal Velocity: v_t = 2 r^2 (ρ - σ) g / (9 η)",
+        "Excess Pressure: Bubble = 4T/R, Drop = 2T/R",
+        "Capillary Ascent: h = (2 T cosθ) / (r ρ g)"
+      ]
+    },
+    {
+      "id": "phy-9",
+      "number": 9,
+      "name": "Thermodynamics & Kinetic Theory",
+      "chapterCode": "PHY-11-09",
+      "description": "Thermal expansion, calorimetry, 1st & 2nd laws of thermodynamics, thermodynamic processes, and kinetic gas theory.",
+      "weightage": "Heavyweight",
+      "color": "#00f2fe",
+      "topics": [
+        { "id": "phy-9-1", "title": "First Law of Thermodynamics & Work", "concepts": ["ΔQ = ΔU + ΔW", "Work in isothermal process W = nRT ln(V2/V1)", "Work in adiabatic process W = (P1V1 - P2V2)/(γ - 1)", "Isochoric (ΔW = 0) and isobaric processes"] },
+        { "id": "phy-9-2", "title": "Second Law, Heat Engines & Carnot Cycle", "concepts": ["Kelvin-Planck & Clausius statements", "Carnot engine efficiency η = 1 - T_C / T_H", "Coefficient of performance of refrigerator"] },
+        { "id": "phy-9-3", "title": "Kinetic Theory of Gases", "concepts": ["Pressure P = 1/3 ρ v_rms^2", "v_rms = √(3RT/M)", "Law of equipartition of energy (1/2 k_B T per degree of freedom)", "Molar heat capacities C_v = f/2 R, C_p = (f/2 + 1) R"] }
+      ],
+      "formulas": [
+        "First Law: ΔQ = ΔU + W",
+        "Isothermal Work: W = n R T ln(V2 / V1)",
+        "Adiabatic Relation: P V^γ = constant, T V^(γ-1) = constant",
+        "Adiabatic Work: W = (P1 V1 - P2 V2) / (γ - 1) = n R (T1 - T2) / (γ - 1)",
+        "Carnot Efficiency: η = 1 - (T_cold / T_hot)",
+        "Gas RMS Speed: v_rms = √(3 R T / M) = √(3 k_B T / m)",
+        "Mayer's Formula: C_p - C_v = R"
+      ]
+    },
+    {
+      "id": "phy-10",
+      "number": 10,
+      "name": "Oscillations and Waves",
+      "chapterCode": "PHY-11-10",
+      "description": "Simple harmonic motion, simple pendulum, energy in SHM, wave velocity, standing waves in strings/pipes, and beats.",
+      "weightage": "Heavyweight",
+      "color": "#00f2fe",
+      "topics": [
+        { "id": "phy-10-1", "title": "Simple Harmonic Motion (SHM)", "concepts": ["Differential equation d^2x/dt^2 + ω^2 x = 0", "x(t) = A sin(ωt + φ)", "Velocity v = ω√(A^2 - x^2)", "Acceleration a = -ω^2 x"] },
+        { "id": "phy-10-2", "title": "Energy in SHM & Simple Pendulum", "concepts": ["KE = 1/2 m ω^2 (A^2 - x^2)", "PE = 1/2 m ω^2 x^2", "Total Energy E = 1/2 m ω^2 A^2 = constant", "Simple Pendulum T = 2π√(L/g)", "Spring Mass T = 2π√(m/k)"] },
+        { "id": "phy-10-3", "title": "Wave Motion & Speed of Waves", "concepts": ["y(x,t) = A sin(kx - ωt + φ)", "Wave speed v = ω/k = νλ", "Speed in stretched string v = √(T/μ)", "Newton-Laplace formula for sound v = √(γP/ρ)"] },
+        { "id": "phy-10-4", "title": "Standing Waves, Resonance & Beats", "concepts": ["Standing waves in strings (nodes and antinodes)", "Open organ pipe harmonics (all harmonics ν, 2ν, 3ν...)", "Closed organ pipe harmonics (odd harmonics ν, 3ν, 5ν...)", "Beat frequency f_beat = |f1 - f2|"] }
+      ],
+      "formulas": [
+        "SHM Velocity: v = ±ω √(A^2 - x^2)",
+        "SHM Acceleration: a = -ω^2 x",
+        "Total Energy in SHM: E = (1/2) m ω^2 A^2",
+        "Simple Pendulum: T = 2π √(L / g)",
+        "Wave Speed: v = λ ν = ω / k",
+        "Speed in String: v = √(T / μ)",
+        "Open Pipe Harmonics: f_n = n (v / 2L)",
+        "Closed Pipe Harmonics: f_n = (2n - 1) (v / 4L)",
+        "Beat Frequency: f_b = |f1 - f2|"
+      ]
+    }
+  ],
+  "chemistry": [
+    {
+      "id": "chem-1",
+      "number": 1,
+      "name": "Some Basic Concepts of Chemistry",
+      "chapterCode": "CHEM-11-01",
+      "description": "Mole concept, molar mass, empirical & molecular formula, stoichiometry, and concentration terms (Molarity, Molality, Mole fraction).",
+      "weightage": "Crucial Foundation",
+      "color": "#c084fc",
+      "topics": [
+        { "id": "chem-1-1", "title": "Mole Concept & Molar Mass", "concepts": ["1 mole = 6.022 × 10^23 entities (Avogadro number)", "Molar volume of gas at STP = 22.7 L (or 22.4 L at old STP)", "Number of moles n = w/M = N/N_A = V/22.7"] },
+        { "id": "chem-1-2", "title": "Empirical and Molecular Formula", "concepts": ["Percentage composition by mass", "Determining empirical formula from % composition", "Molecular formula = n × Empirical formula where n = Molar Mass / Empirical Mass"] },
+        { "id": "chem-1-3", "title": "Stoichiometry & Limiting Reagent", "concepts": ["Balanced chemical equations", "Limiting reagent identification", "Theoretical vs practical percentage yield"] },
+        { "id": "chem-1-4", "title": "Concentration Units of Solutions", "concepts": ["Molarity (M) = moles solute / volume solution (L)", "Molality (m) = moles solute / mass solvent (kg) [Temp independent]", "Mole fraction (χ)", "Mass percentage (w/w%) & ppm"] }
+      ],
+      "formulas": [
+        "Moles n = Mass (g) / Molar Mass = Particles / N_A = Volume (L at STP) / 22.4",
+        "Molarity M = (w_B × 1000) / (M_B × V_mL)",
+        "Molality m = (w_B × 1000) / (M_B × W_A_grams)",
+        "Mole Fraction χ_A = n_A / (n_A + n_B)",
+        "Dilution Law: M1 V1 = M2 V2",
+        "Molecular Formula = (Empirical Formula)_n, where n = Mol. Mass / Emp. Mass"
+      ]
+    },
+    {
+      "id": "chem-2",
+      "number": 2,
+      "name": "Structure of Atom",
+      "chapterCode": "CHEM-11-02",
+      "description": "Bohr model, hydrogen spectrum, de Broglie wavelength, Heisenberg uncertainty principle, quantum numbers, and electronic configurations.",
+      "weightage": "Very High",
+      "color": "#c084fc",
+      "topics": [
+        { "id": "chem-2-1", "title": "Bohr's Model & Hydrogen Line Spectrum", "concepts": ["Postulates of Bohr model: mvr = nh/(2π)", "Energy levels E_n = -13.6 Z^2 / n^2 eV", "Rydberg formula for spectral lines (Lyman, Balmer, Paschen, Brackett, Pfund)"] },
+        { "id": "chem-2-2", "title": "Dual Nature of Matter & Heisenberg Principle", "concepts": ["de Broglie relation λ = h/(mv) = h/p", "Heisenberg uncertainty principle Δx · Δp ≥ h/(4π)"] },
+        { "id": "chem-2-3", "title": "Quantum Numbers & Atomic Orbitals", "concepts": ["Principal (n), Azimuthal (l), Magnetic (m_l), Spin (m_s)", "Shapes of s, p, d orbitals & nodes (radial nodes = n - l - 1, angular nodes = l)"] },
+        { "id": "chem-2-4", "title": "Rules for Electronic Configuration", "concepts": ["Aufbau principle ((n+l) rule)", "Pauli exclusion principle", "Hund's rule of maximum multiplicity", "Exceptional configurations of Cr ([Ar] 3d^5 4s^1) and Cu ([Ar] 3d^10 4s^1)"] }
+      ],
+      "formulas": [
+        "Bohr Orbit Radius: r_n = 0.529 (n^2 / Z) Å",
+        "Bohr Energy: E_n = -13.6 (Z^2 / n^2) eV/atom = -2.18 × 10^-18 (Z^2 / n^2) J",
+        "Rydberg Formula: 1/λ = R_H Z^2 (1/n1^2 - 1/n2^2), R_H = 1.097 × 10^7 m^-1",
+        "de Broglie: λ = h / (m v) = h / √(2 m q V)",
+        "Heisenberg: Δx · Δp ≥ h / (4π)",
+        "Radial Nodes = n - l - 1, Angular Nodes = l, Total Nodes = n - 1"
+      ]
+    },
+    {
+      "id": "chem-3",
+      "number": 3,
+      "name": "Classification of Elements & Periodicity",
+      "chapterCode": "CHEM-11-03",
+      "description": "Modern periodic table, periodic trends in atomic/ionic radii, ionization enthalpy, electron gain enthalpy, and electronegativity.",
+      "weightage": "High",
+      "color": "#c084fc",
+      "topics": [
+        { "id": "chem-3-1", "title": "Modern Periodic Table & Blocks (s, p, d, f)", "concepts": ["Moseley's modern periodic law", "Group, period and block identification from atomic number", "IUPAC nomenclature for elements with Z > 100"] },
+        { "id": "chem-3-2", "title": "Periodic Trends in Physical Properties", "concepts": ["Atomic and ionic radii trends (Covalent, Metallic, van der Waals)", "Isoelectronic species radii (radius decreases with increasing Z)", "Ionization Enthalpy (IE1 < IE2 < IE3, anomalies in Be>B and N>O due to stable configurations)"] },
+        { "id": "chem-3-3", "title": "Electron Gain Enthalpy & Electronegativity", "concepts": ["Electron gain enthalpy (Cl > F anomaly due to interelectronic repulsions)", "Electronegativity scales (Pauling scale)", "Diagonal relationships and anomalous first-row behavior"] }
+      ],
+      "formulas": [
+        "Effective Nuclear Charge: Z_eff = Z - σ (Slater's rule)",
+        "Pauling Electronegativity Difference: |χ_A - χ_B| = 0.208 √(Δ in kcal/mol)",
+        "Mulliken Electronegativity: χ = (IE + EA) / 2 (in eV)",
+        "Isoelectronic Radii: Radius ∝ 1 / Nuclear Charge (Z)"
+      ]
+    },
+    {
+      "id": "chem-4",
+      "number": 4,
+      "name": "Chemical Bonding & Molecular Structure",
+      "chapterCode": "CHEM-11-04",
+      "description": "Lewis structures, VSEPR theory, hybridization (sp, sp2, sp3, sp3d, sp3d2), Molecular Orbital Theory (MOT), and Hydrogen bonding.",
+      "weightage": "Supreme / Highest Weightage",
+      "color": "#c084fc",
+      "topics": [
+        { "id": "chem-4-1", "title": "Lewis Dot Structures, Formal Charge & Octet Rule", "concepts": ["Formal charge = V - N_lone - 1/2 N_bonding", "Octet rule violations (incomplete octet, expanded octet, odd electron species)"] },
+        { "id": "chem-4-2", "title": "VSEPR Theory & Molecular Geometry", "concepts": ["Repulsion order: lone pair-lone pair > lone pair-bond pair > bond pair-bond pair", "Predicting shapes of molecules (Linear, Trigonal Planar, Tetrahedral, Trigonal Bipyramidal, Octahedral, Bent, T-shaped, Seesaw)"] },
+        { "id": "chem-4-3", "title": "Valence Bond Theory & Hybridization", "concepts": ["Sigma (σ) vs Pi (π) bonds", "Hybridization types: sp, sp2, sp3, sp3d, sp3d2", "Calculation of steric number = 1/2 [V + M - C + A]"] },
+        { "id": "chem-4-4", "title": "Molecular Orbital Theory (MOT) & H-Bonding", "concepts": ["LCAO method, Bonding vs Antibonding MOs", "MO energy diagram for ≤ 14 electrons (with 2p-mixing) and > 14 electrons (O2, F2)", "Bond Order = 1/2 (N_b - N_a)", "Magnetic behavior (Paramagnetic vs Diamagnetic)", "Intermolecular vs Intramolecular hydrogen bonding"] }
+      ],
+      "formulas": [
+        "Formal Charge = V - L - (1/2)B",
+        "Steric Number = (Number of σ bonds) + (Number of lone pairs)",
+        "Hybridization formula: H = (1/2) [ V + M - C + A ]",
+        "Bond Order = (1/2) [ N_bonding - N_antibonding ]",
+        "Dipole Moment μ = q × d (in Debye, 1 D = 3.33564 × 10^-30 C·m)",
+        "Stability ∝ Bond Order ∝ 1 / Bond Length"
+      ]
+    },
+    {
+      "id": "chem-5",
+      "number": 5,
+      "name": "Chemical Thermodynamics",
+      "chapterCode": "CHEM-11-05",
+      "description": "First law, state functions, enthalpy (ΔH), Hess's law, heat capacities, entropy (ΔS), Gibbs energy (ΔG), and spontaneity.",
+      "weightage": "Very High",
+      "color": "#c084fc",
+      "topics": [
+        { "id": "chem-5-1", "title": "Basic Concepts & First Law of Thermodynamics", "concepts": ["System types (open, closed, isolated)", "State functions vs path functions", "Extensive vs intensive properties", "First Law: ΔU = q + w (IUPAC convention)", "Work in reversible isothermal expansion w = -2.303 nRT log(V2/V1)"] },
+        { "id": "chem-5-2", "title": "Enthalpy (ΔH), Heat Capacities & Thermochemistry", "concepts": ["ΔH = ΔU + Δn_g RT", "C_p - C_v = R", "Standard enthalpy of formation (Δ_f H°), combustion, neutralization", "Hess's Law of constant heat summation", "Bond enthalpy calculations"] },
+        { "id": "chem-5-3", "title": "Second Law, Entropy (ΔS) & Gibbs Energy (ΔG)", "concepts": ["Entropy as measure of randomness: ΔS = q_rev / T", "Second law: ΔS_total = ΔS_sys + ΔS_surr > 0 for spontaneous process", "Gibbs Helmholtz equation: ΔG = ΔH - TΔS", "Criteria for spontaneity (ΔG < 0)", "Relation between ΔG° and equilibrium constant: ΔG° = -RT ln K = -2.303 RT log K"] }
+      ],
+      "formulas": [
+        "First Law: ΔU = q + w",
+        "Reversible Isothermal Work: w = -2.303 n R T log(V2 / V1) = -2.303 n R T log(P1 / P2)",
+        "Enthalpy Relation: ΔH = ΔU + Δn_g R T",
+        "Hess's Law: Δ_r H° = Σ Δ_f H°(products) - Σ Δ_f H°(reactants)",
+        "Gibbs Helmholtz Equation: ΔG = ΔH - T ΔS",
+        "Equilibrium Relation: ΔG° = -R T ln K_eq = -2.303 R T log K_eq",
+        "Entropy of System: ΔS = q_rev / T"
+      ]
+    },
+    {
+      "id": "chem-6",
+      "number": 6,
+      "name": "Equilibrium",
+      "chapterCode": "CHEM-11-06",
+      "description": "Chemical equilibrium (Kc, Kp, Le Chatelier), ionic equilibrium (pH, buffer solutions, salt hydrolysis, solubility product Ksp).",
+      "weightage": "Heavyweight",
+      "color": "#c084fc",
+      "topics": [
+        { "id": "chem-6-1", "title": "Chemical Equilibrium, Kp & Kc", "concepts": ["Law of mass action", "Relationship Kp = Kc (RT)^(Δn_g)", "Reaction quotient Q and prediction of direction (Q < K, Q = K, Q > K)"] },
+        { "id": "chem-6-2", "title": "Le Chatelier's Principle", "concepts": ["Effect of concentration, temperature, pressure changes", "Effect of catalyst and inert gas addition (at constant volume vs constant pressure)"] },
+        { "id": "chem-6-3", "title": "Ionic Equilibrium, pH & Buffer Solutions", "concepts": ["Ostwald's dilution law", "Autoionization of water: K_w = [H+][OH-] = 10^-14 at 25°C", "pH = -log[H+], pOH = -log[OH-]", "Buffer solutions (Acidic & Basic buffers, Henderson-Hasselbalch equation)"] },
+        { "id": "chem-6-4", "title": "Salt Hydrolysis & Solubility Product (Ksp)", "concepts": ["Hydrolysis of salts (SA-SB, SA-WB, WA-SB, WA-WB)", "Solubility product Ksp and condition for precipitation (Ionic Product IP > Ksp)", "Common ion effect applications"] }
+      ],
+      "formulas": [
+        "Kp = Kc (R T)^(Δn_g)",
+        "pH = -log[H+], pOH = -log[OH-], pH + pOH = 14 (at 25°C)",
+        "Ostwald Dilution: [H+] = c α = √(K_a c), α = √(K_a / c)",
+        "Henderson (Acidic Buffer): pH = pK_a + log([Salt] / [Acid])",
+        "Henderson (Basic Buffer): pOH = pK_b + log([Salt] / [Base])",
+        "Salt of WA-SB: pH = 7 + (1/2)pK_a + (1/2)log C",
+        "Salt of SA-WB: pH = 7 - (1/2)pK_b - (1/2)log C",
+        "Solubility Product: For A_x B_y, K_sp = x^x y^y S^(x+y)"
+      ]
+    },
+    {
+      "id": "chem-7",
+      "number": 7,
+      "name": "Redox Reactions",
+      "chapterCode": "CHEM-11-07",
+      "description": "Oxidation states, balancing redox equations (ion-electron & oxidation state method), oxidizing & reducing agents.",
+      "weightage": "High",
+      "color": "#c084fc",
+      "topics": [
+        { "id": "chem-7-1", "title": "Oxidation Numbers & Rules", "concepts": ["Rules for assigning oxidation numbers", "Oxidation state anomalies (CrO5, H2SO5, Fe3O4, C3O2)", "Oxidizing vs reducing agents"] },
+        { "id": "chem-7-2", "title": "Balancing Redox Reactions", "concepts": ["Ion-electron / half-reaction method in acidic and basic medium", "Oxidation number change method", "Disproportionation and comproportionation reactions"] }
+      ],
+      "formulas": [
+        "Oxidation = Increase in O.N. / Loss of electrons",
+        "Reduction = Decrease in O.N. / Gain of electrons",
+        "Equilibrium in Redox: n_factor = change in oxidation state per mole of substance",
+        "Equivalent Mass = Molar Mass / n_factor"
+      ]
+    },
+    {
+      "id": "chem-8",
+      "number": 8,
+      "name": "Organic Chemistry: Principles & Techniques",
+      "chapterCode": "CHEM-11-08",
+      "description": "IUPAC nomenclature, structural & stereo isomerism, electronic effects (inductive, resonance, hyperconjugation), and reactive intermediates.",
+      "weightage": "Crucial Organic Foundation",
+      "color": "#c084fc",
+      "topics": [
+        { "id": "chem-8-1", "title": "IUPAC Nomenclature & Functional Groups", "concepts": ["Priority order of functional groups (-COOH > -SO3H > -COOR > -COCl > -CONH2 > -CN > -CHO > >C=O > -OH > -NH2 > C=C > C≡C)", "Polyfunctional compounds nomenclature"] },
+        { "id": "chem-8-2", "title": "Isomerism in Organic Compounds", "concepts": ["Structural isomerism (Chain, Position, Functional, Metamerism, Tautomerism)", "Geometrical isomerism (cis-trans, E-Z) in alkenes"] },
+        { "id": "chem-8-3", "title": "Electronic Displacement Effects", "concepts": ["Inductive effect (+I and -I)", "Electromeric effect (+E and -E)", "Resonance / Mesomeric effect (+M and -M)", "Hyperconjugation (no-bond resonance, stability of alkenes & carbocations)"] },
+        { "id": "chem-8-4", "title": "Reaction Intermediates & Mechanism Types", "concepts": ["Carbocations (stability order: 3° > 2° > 1° > methyl)", "Carbanions (stability order: methyl > 1° > 2° > 3°)", "Free radicals & carbenes", "Homolytic vs heterolytic cleavage", "Electrophiles vs Nucleophiles"] }
+      ],
+      "formulas": [
+        "Carbocation Stability: 3° > 2° > 1° > CH3+ (stabilized by +I, +M, hyperconjugation)",
+        "Carbanion Stability: CH3- > 1° > 2° > 3° (stabilized by -I, -M)",
+        "Acidity of Carboxylic Acids ∝ -I / -M effect",
+        "Basicity of Amines (in gas phase): 3° > 2° > 1° > NH3"
+      ]
+    },
+    {
+      "id": "chem-9",
+      "number": 9,
+      "name": "Hydrocarbons",
+      "chapterCode": "CHEM-11-09",
+      "description": "Alkanes (Wurtz, free radical chlorination), Alkenes (Markovnikov addition, ozonolysis), Alkynes, and Aromaticity (Hückel's rule, electrophilic substitution).",
+      "weightage": "Very High",
+      "color": "#c084fc",
+      "topics": [
+        { "id": "chem-9-1", "title": "Alkanes: Preparation & Reactions", "concepts": ["Wurtz reaction", "Decarboxylation of carboxylic acids (Soda-lime)", "Kolbe's electrolytic synthesis", "Free-radical halogenation mechanism (Initiation, Propagation, Termination)", "Conformations of ethane (Staggered vs Eclipsed, Sawhorse & Newman projections)"] },
+        { "id": "chem-9-2", "title": "Alkenes: Preparation & Electrophilic Additions", "concepts": ["Dehydration of alcohols (Saytzeff rule)", "Dehydrohalogenation of alkyl halides", "Markovnikov's rule vs Anti-Markovnikov (Peroxide / Kharasch effect with HBr)", "Ozonolysis of alkenes (determining position of double bond)", "Oxidation with cold dil. KMnO4 (Baeyer's reagent)"] },
+        { "id": "chem-9-3", "title": "Alkynes & Acidic Nature", "concepts": ["Preparation from calcium carbide and vicinal dihalides", "Acidic nature of terminal alkynes (sp hybridized carbon)", "Addition of water in presence of Hg2+/H2SO4 (hydration to ketones/aldehydes)", "Cyclic polymerization to benzene"] },
+        { "id": "chem-9-4", "title": "Aromatic Hydrocarbons & Electrophilic Substitution", "concepts": ["Hückel's rule of aromaticity (4n + 2 π electrons, planar, cyclic)", "Electrophilic aromatic substitution mechanism (Nitration, Halogenation, Sulphonation, Friedel-Crafts alkylation & acylation)", "Directing influence of groups (ortho/para vs meta directors)"] }
+      ],
+      "formulas": [
+        "Wurtz: 2 R-X + 2 Na --(dry ether)--> R-R + 2 NaX",
+        "Markovnikov: Electrophile adds to C with more H; Nucleophile to C with fewer H",
+        "Anti-Markovnikov (Kharasch): Applies only to HBr in presence of peroxides",
+        "Hückel's Rule: Cyclic, planar, conjugated systems with (4n + 2) π electrons are aromatic",
+        "Ozonolysis: R-CH=CH-R' + O3 --> Ozonide --(Zn/H2O)--> R-CHO + R'-CHO"
+      ]
+    }
+  ],
+  "maths": [
+    {
+      "id": "math-1",
+      "number": 1,
+      "name": "Sets, Relations and Functions",
+      "chapterCode": "MATH-11-01",
+      "description": "Sets algebra, Venn diagrams, Cartesian products, relation definitions, domain & range, types of real functions and their graphs.",
+      "weightage": "Crucial Foundation",
+      "color": "#10b981",
+      "topics": [
+        { "id": "math-1-1", "title": "Sets, Subsets & Power Set", "concepts": ["Roster vs Set-builder form", "Empty, finite, infinite, and equal sets", "Subsets, intervals as subsets of R", "Power set P(A) with 2^n elements", "Venn diagrams & operations (Union, Intersection, Difference, Complement, De Morgan's laws)"] },
+        { "id": "math-1-2", "title": "Relations & Cartesian Product", "concepts": ["Cartesian product A × B (n(A×B) = pq)", "Total number of relations = 2^(pq)", "Domain, codomain and range of relation"] },
+        { "id": "math-1-3", "title": "Functions & Standard Graphs", "concepts": ["Definition of function as a special relation", "Domain and range of real functions", "Standard functions: Identity, Constant, Polynomial, Rational, Modulus |x|, Signum sgn(x), Greatest Integer [x]"] }
+      ],
+      "formulas": [
+        "n(A ∪ B) = n(A) + n(B) - n(A ∩ B)",
+        "n(A ∪ B ∪ C) = n(A) + n(B) + n(C) - n(A ∩ B) - n(B ∩ C) - n(A ∩ C) + n(A ∩ B ∩ C)",
+        "De Morgan: (A ∪ B)' = A' ∩ B', (A ∩ B)' = A' ∪ B'",
+        "Number of subsets of set with n elements = 2^n",
+        "Greatest Integer Function: x - 1 < [x] ≤ x"
+      ]
+    },
+    {
+      "id": "math-2",
+      "number": 2,
+      "name": "Trigonometric Functions",
+      "chapterCode": "MATH-11-02",
+      "description": "Angles, radian measure, trigonometric ratios of compound, multiple and submultiple angles, transformation formulas, and trigonometric equations.",
+      "weightage": "Heavyweight / Core",
+      "color": "#10b981",
+      "topics": [
+        { "id": "math-2-1", "title": "Radian Measure & Signs in Quadrants", "concepts": ["Angle θ = l / r (in radians)", "180° = π radians", "Signs in 4 quadrants (ASTC rule)", "Domain and range of trigonometric functions"] },
+        { "id": "math-2-2", "title": "Compound Angle & Multiple Angle Formulas", "concepts": ["sin(A±B), cos(A±B), tan(A±B)", "sin(2A) = 2 sin A cos A = (2 tan A)/(1 + tan^2 A)", "cos(2A) = cos^2 A - sin^2 A = 2 cos^2 A - 1 = 1 - 2 sin^2 A", "tan(2A) = (2 tan A)/(1 - tan^2 A)", "3A formulas for sin, cos, tan"] },
+        { "id": "math-2-3", "title": "Transformation & Product to Sum Formulas", "concepts": ["2 sin A cos B = sin(A+B) + sin(A-B)", "2 cos A sin B = sin(A+B) - sin(A-B)", "2 cos A cos B = cos(A+B) + cos(A-B)", "2 sin A sin B = cos(A-B) - cos(A+B)", "C-D formulas for sin C ± sin D and cos C ± cos D"] }
+      ],
+      "formulas": [
+        "θ (rad) = l / r, 180° = π rad",
+        "sin(A ± B) = sin A cos B ± cos A sin B",
+        "cos(A ± B) = cos A cos B ∓ sin A sin B",
+        "tan(A ± B) = (tan A ± tan B) / (1 ∓ tan A tan B)",
+        "sin C + sin D = 2 sin((C+D)/2) cos((C-D)/2)",
+        "cos C + cos D = 2 cos((C+D)/2) cos((C-D)/2)",
+        "cos C - cos D = -2 sin((C+D)/2) sin((C-D)/2)",
+        "sin 2A = 2 sin A cos A, cos 2A = cos^2 A - sin^2 A = 1 - 2 sin^2 A = 2 cos^2 A - 1"
+      ]
+    },
+    {
+      "id": "math-3",
+      "number": 3,
+      "name": "Complex Numbers & Quadratic Equations",
+      "chapterCode": "MATH-11-03",
+      "description": "Algebra of complex numbers, modulus and argument, polar representation, fundamental theorem of algebra, and complex quadratic roots.",
+      "weightage": "High",
+      "color": "#10b981",
+      "topics": [
+        { "id": "math-3-1", "title": "Algebra of Complex Numbers & Modulus", "concepts": ["Powers of i (i^4k = 1, i^4k+1 = i, i^4k+2 = -1, i^4k+3 = -i)", "Real & imaginary parts", "Conjugate z̄ = x - iy and properties", "Modulus |z| = √(x^2 + y^2) and properties |z1 z2| = |z1| |z2|"] },
+        { "id": "math-3-2", "title": "Argand Plane, Polar Form & Quadratic Equations", "concepts": ["Argument / Amplitude θ = arg(z) (-π < θ ≤ π for principal argument)", "Polar form z = r(cos θ + i sin θ)", "Solutions of ax^2 + bx + c = 0 with D < 0 in complex number system"] }
+      ],
+      "formulas": [
+        "z = x + i y, z̄ = x - i y, |z| = √(x^2 + y^2)",
+        "z · z̄ = |z|^2",
+        "Polar Form: z = r (cos θ + i sin θ) = r e^(iθ)",
+        "Principal Argument θ ∈ (-π, π]",
+        "Quadratic Roots: x = (-b ± i√(|D|)) / (2a) when D = b^2 - 4ac < 0"
+      ]
+    },
+    {
+      "id": "math-4",
+      "number": 4,
+      "name": "Linear Inequalities",
+      "chapterCode": "MATH-11-04",
+      "description": "Linear inequalities in one variable, algebraic solutions and graphical representation on number line and Cartesian plane.",
+      "weightage": "Moderate",
+      "color": "#10b981",
+      "topics": [
+        { "id": "math-4-1", "title": "Algebraic Solutions in One Variable", "concepts": ["Rules of inequalities (Multiplying/dividing by negative reverses inequality sign)", "Representation on real number line with open/closed intervals"] },
+        { "id": "math-4-2", "title": "Graphical Solution of System in Two Variables", "concepts": ["Half-planes (Feasible region)", "Strict vs slack inequalities (dashed vs solid boundary lines)"] }
+      ],
+      "formulas": [
+        "If a < b and c < 0, then ac > bc and a/c > b/c",
+        "|x| ≤ a  ⟺  -a ≤ x ≤ a",
+        "|x| ≥ a  ⟺  x ≤ -a or x ≥ a"
+      ]
+    },
+    {
+      "id": "math-5",
+      "number": 5,
+      "name": "Permutations and Combinations",
+      "chapterCode": "MATH-11-05",
+      "description": "Fundamental principle of counting, factorials, permutations nPr, combinations nCr, restricted selections, and circular permutations.",
+      "weightage": "Heavyweight / Critical",
+      "color": "#10b981",
+      "topics": [
+        { "id": "math-5-1", "title": "Fundamental Counting Principle & Factorials", "concepts": ["Multiplication principle (AND) vs Addition principle (OR)", "Factorial notation n! = n(n-1)...1, 0! = 1"] },
+        { "id": "math-5-2", "title": "Permutations (Arrangements)", "concepts": ["nPr = n! / (n-r)!", "Permutations when all objects are not distinct: n! / (p! q! r!)", "Restricted permutations (objects always together / never together)"] },
+        { "id": "math-5-3", "title": "Combinations (Selections)", "concepts": ["nCr = n! / (r! (n-r)!)", "Properties: nCr = nC(n-r), nCr + nC(r-1) = (n+1)Cr (Pascal's Identity)", "Selection of teams, geometry problems (number of diagonals = nC2 - n)"] }
+      ],
+      "formulas": [
+        "nPr = n! / (n - r)!",
+        "nCr = n! / [ r! (n - r)! ]",
+        "nCr = nC(n-r)",
+        "Pascal's Rule: nCr + nC(r-1) = (n+1)Cr",
+        "Number of diagonals in n-sided polygon = n(n-3)/2 = nC2 - n",
+        "Total selections from n distinct items = 2^n - 1"
+      ]
+    },
+    {
+      "id": "math-6",
+      "number": 6,
+      "name": "Binomial Theorem",
+      "chapterCode": "MATH-11-06",
+      "description": "Binomial theorem for positive integral index, general term, middle terms, and binomial coefficients properties.",
+      "weightage": "High",
+      "color": "#10b981",
+      "topics": [
+        { "id": "math-6-1", "title": "Binomial Theorem Expansion", "concepts": ["(a + b)^n = Σ nCr a^(n-r) b^r", "Total number of terms = n + 1", "Sum of all coefficients = 2^n"] },
+        { "id": "math-6-2", "title": "General Term & Middle Terms", "concepts": ["General term T_(r+1) = nCr a^(n-r) b^r", "Middle term when n is even: T_(n/2 + 1)", "Middle terms when n is odd: T_((n+1)/2) and T_((n+3)/2)"] }
+      ],
+      "formulas": [
+        "(a + b)^n = nC0 a^n + nC1 a^(n-1)b + ... + nCn b^n",
+        "General Term: T_(r+1) = nCr a^(n-r) b^r",
+        "Sum of Coefficients: C0 + C1 + C2 + ... + Cn = 2^n",
+        "Alternating Sum: C0 - C1 + C2 - C3 + ... = 0"
+      ]
+    },
+    {
+      "id": "math-7",
+      "number": 7,
+      "name": "Sequences and Series",
+      "chapterCode": "MATH-11-07",
+      "description": "Arithmetic Progression (AP), Geometric Progression (GP), Arithmetic & Geometric Mean, and sum to n terms.",
+      "weightage": "High",
+      "color": "#10b981",
+      "topics": [
+        { "id": "math-7-1", "title": "Arithmetic Progression (AP) & AM", "concepts": ["nth term a_n = a + (n-1)d", "Sum S_n = n/2 [2a + (n-1)d] = n/2 (a + l)", "Arithmetic Mean A = (a+b)/2", "Inserting n arithmetic means between a and b"] },
+        { "id": "math-7-2", "title": "Geometric Progression (GP) & GM", "concepts": ["nth term a_n = a r^(n-1)", "Sum S_n = a(r^n - 1)/(r - 1) for r ≠ 1", "Sum of infinite GP S_∞ = a/(1 - r) for |r| < 1", "Geometric Mean G = √(ab)", "Inequality of AM and GM: AM ≥ GM"] }
+      ],
+      "formulas": [
+        "AP nth term: a_n = a + (n - 1)d",
+        "AP Sum: S_n = (n/2) [2a + (n - 1)d] = (n/2) (a + l)",
+        "GP nth term: a_n = a r^(n-1)",
+        "GP Sum: S_n = a(1 - r^n) / (1 - r)",
+        "Infinite GP Sum: S_∞ = a / (1 - r)  (when |r| < 1)",
+        "AM = (a + b) / 2, GM = √(ab), AM ≥ GM"
+      ]
+    },
+    {
+      "id": "math-8",
+      "number": 8,
+      "name": "Straight Lines",
+      "chapterCode": "MATH-11-08",
+      "description": "Slope of line, various forms of line equations, angle between lines, perpendicular distance, and distance between parallel lines.",
+      "weightage": "Heavyweight / Core Coordinate Geometry",
+      "color": "#10b981",
+      "topics": [
+        { "id": "math-8-1", "title": "Slope & Various Forms of Line Equations", "concepts": ["Slope m = tan θ = (y2 - y1)/(x2 - x1)", "Point-slope form: y - y1 = m(x - x1)", "Two-point form: y - y1 = ((y2-y1)/(x2-x1))(x - x1)", "Slope-intercept form: y = mx + c", "Intercept form: x/a + y/b = 1", "Normal form: x cos ω + y sin ω = p"] },
+        { "id": "math-8-2", "title": "Angle Between Lines & Distance Formulas", "concepts": ["tan θ = |(m2 - m1) / (1 + m1 m2)|", "Parallel condition: m1 = m2", "Perpendicular condition: m1 m2 = -1", "Perpendicular distance of (x1, y1) from Ax + By + C = 0: d = |Ax1 + By1 + C| / √(A^2 + B^2)", "Distance between parallel lines: d = |C1 - C2| / √(A^2 + B^2)"] }
+      ],
+      "formulas": [
+        "Slope m = (y2 - y1) / (x2 - x1) = tan θ",
+        "Slope-Intercept: y = m x + c",
+        "Point-Slope: y - y1 = m (x - x1)",
+        "Intercept Form: x/a + y/b = 1",
+        "Angle between lines: tan θ = |(m2 - m1) / (1 + m1 m2)|",
+        "Perpendicular Distance: d = |A x1 + B y1 + C| / √(A^2 + B^2)",
+        "Distance between Parallel Lines: d = |C1 - C2| / √(A^2 + B^2)"
+      ]
+    },
+    {
+      "id": "math-9",
+      "number": 9,
+      "name": "Conic Sections",
+      "chapterCode": "MATH-11-09",
+      "description": "Circles, Parabola, Ellipse, Hyperbola standard equations, eccentricity, foci, directrix, vertices, and latus rectum.",
+      "weightage": "Heavyweight",
+      "color": "#10b981",
+      "topics": [
+        { "id": "math-9-1", "title": "Circle", "concepts": ["Standard equation (x - h)^2 + (y - k)^2 = r^2", "General equation x^2 + y^2 + 2gx + 2fy + c = 0, centre (-g, -f), radius √(g^2 + f^2 - c)"] },
+        { "id": "math-9-2", "title": "Parabola", "concepts": ["Standard forms: y^2 = 4ax, y^2 = -4ax, x^2 = 4ay, x^2 = -4ay", "Focus (a, 0), Directrix x = -a, Latus rectum length = 4a, Eccentricity e = 1"] },
+        { "id": "math-9-3", "title": "Ellipse", "concepts": ["x^2/a^2 + y^2/b^2 = 1 (a > b)", "Foci (±ae, 0), Eccentricity e = √(1 - b^2/a^2) < 1", "Major axis 2a, Minor axis 2b, Latus rectum = 2b^2/a"] },
+        { "id": "math-9-4", "title": "Hyperbola", "concepts": ["x^2/a^2 - y^2/b^2 = 1", "Foci (±ae, 0), Eccentricity e = √(1 + b^2/a^2) > 1", "Transverse axis 2a, Conjugate axis 2b, Latus rectum = 2b^2/a"] }
+      ],
+      "formulas": [
+        "Circle: (x - h)^2 + (y - k)^2 = r^2",
+        "Parabola (y^2 = 4ax): Focus (a, 0), Directrix x = -a, Latus Rectum = 4a",
+        "Ellipse (x^2/a^2 + y^2/b^2 = 1, a > b): e = √(1 - b^2/a^2), Foci (±ae, 0), LR = 2b^2/a",
+        "Hyperbola (x^2/a^2 - y^2/b^2 = 1): e = √(1 + b^2/a^2), Foci (±ae, 0), LR = 2b^2/a"
+      ]
+    },
+    {
+      "id": "math-10",
+      "number": 10,
+      "name": "Introduction to 3D Geometry",
+      "chapterCode": "MATH-11-10",
+      "description": "Coordinate axes & planes in 3D, octants, distance formula, section formula in 3D space.",
+      "weightage": "Moderate",
+      "color": "#10b981",
+      "topics": [
+        { "id": "math-10-1", "title": "Coordinate Axes, Planes & Octants", "concepts": ["3 perpendicular coordinate planes (XY, YZ, ZX)", "Signs of coordinates in 8 octants"] },
+        { "id": "math-10-2", "title": "Distance & Section Formula in 3D", "concepts": ["Distance d = √((x2-x1)^2 + (y2-y1)^2 + (z2-z1)^2)", "Internal division: ((m x2 + n x1)/(m+n), (m y2 + n y1)/(m+n), (m z2 + n z1)/(m+n))", "Centroid of triangle: ((x1+x2+x3)/3, (y1+y2+y3)/3, (z1+z2+z3)/3)"] }
+      ],
+      "formulas": [
+        "Distance in 3D: d = √[ (x2 - x1)^2 + (y2 - y1)^2 + (z2 - z1)^2 ]",
+        "Section Formula: P = ( (mx2 + nx1)/(m+n), (my2 + ny1)/(m+n), (mz2 + nz1)/(m+n) )",
+        "Centroid of Triangle: G = ( (x1+x2+x3)/3, (y1+y2+y3)/3, (z1+z2+z3)/3 )"
+      ]
+    },
+    {
+      "id": "math-11",
+      "number": 11,
+      "name": "Limits and Derivatives",
+      "chapterCode": "MATH-11-11",
+      "description": "Intuitive idea of limit, standard limits (algebraic, trigonometric), derivative as rate of change, first principle, product & quotient rules.",
+      "weightage": "Supreme / Calculus Foundation",
+      "color": "#10b981",
+      "topics": [
+        { "id": "math-11-1", "title": "Limits & Standard Algebraic/Trig Limits", "concepts": ["Left hand limit (LHL) and Right hand limit (RHL)", "lim(x→a) (x^n - a^n)/(x - a) = n a^(n-1)", "lim(x→0) sin x / x = 1", "lim(x→0) (1 - cos x)/x = 0, lim(x→0) (1 - cos x)/x^2 = 1/2", "lim(x→0) tan x / x = 1"] },
+        { "id": "math-11-2", "title": "Derivative by First Principle & Standard Derivatives", "concepts": ["Definition: f'(x) = lim(h→0) [f(x+h) - f(x)] / h", "d/dx(x^n) = n x^(n-1)", "d/dx(sin x) = cos x, d/dx(cos x) = -sin x, d/dx(tan x) = sec^2 x", "d/dx(sec x) = sec x tan x, d/dx(cosec x) = -cosec x cot x, d/dx(cot x) = -cosec^2 x"] },
+        { "id": "math-11-3", "title": "Algebra of Derivatives (Product & Quotient Rules)", "concepts": ["Sum/Difference rule: (u ± v)' = u' ± v'", "Product rule: (u v)' = u' v + u v'", "Quotient rule: (u / v)' = (u' v - u v') / v^2"] }
+      ],
+      "formulas": [
+        "lim(x→a) (x^n - a^n) / (x - a) = n a^(n-1)",
+        "lim(x→0) (sin x) / x = 1, lim(x→0) (tan x) / x = 1",
+        "First Principle: f'(x) = lim(h→0) [f(x+h) - f(x)] / h",
+        "Product Rule: d/dx (u · v) = u' v + u v'",
+        "Quotient Rule: d/dx (u / v) = (u' v - u v') / v^2",
+        "d/dx (x^n) = n x^(n-1)"
+      ]
+    },
+    {
+      "id": "math-12",
+      "number": 12,
+      "name": "Statistics and Probability",
+      "chapterCode": "MATH-11-12",
+      "description": "Measures of dispersion (mean deviation, variance, standard deviation), axiomatic probability, addition rule, mutually exclusive & exhaustive events.",
+      "weightage": "High",
+      "color": "#10b981",
+      "topics": [
+        { "id": "math-12-1", "title": "Measures of Dispersion (Variance & SD)", "concepts": ["Mean deviation about mean and median", "Variance σ^2 = Σ(x_i - x̄)^2 / n = Σ x_i^2 / n - (x̄)^2", "Standard deviation σ = √(Variance)", "Coefficient of Variation CV = (σ / x̄) × 100"] },
+        { "id": "math-12-2", "title": "Axiomatic Probability & Event Algebra", "concepts": ["Sample space, events (sure, impossible, mutually exclusive, exhaustive)", "P(A ∪ B) = P(A) + P(B) - P(A ∩ B)", "For mutually exclusive events: P(A ∩ B) = 0 ⟹ P(A ∪ B) = P(A) + P(B)", "P(A') = 1 - P(A)"] }
+      ],
+      "formulas": [
+        "Mean Deviation about Mean: MD(x̄) = Σ |x_i - x̄| / N",
+        "Variance σ^2 = (1/N) Σ (x_i - x̄)^2 = (1/N) Σ x_i^2 - (x̄)^2",
+        "Standard Deviation σ = √(Variance)",
+        "Coefficient of Variation: CV = (σ / x̄) × 100",
+        "P(A ∪ B) = P(A) + P(B) - P(A ∩ B)",
+        "P(not A) = 1 - P(A)"
+      ]
+    }
+  ]
+}

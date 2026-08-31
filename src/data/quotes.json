@@ -1,0 +1,172 @@
+{
+  "quotes": [
+    {
+      "id": "q1",
+      "author": "Richard Feynman",
+      "subject": "Physics",
+      "role": "Nobel Laureate in Quantum Electrodynamics",
+      "text": "I would rather have questions that can't be answered than answers that can't be questioned.",
+      "context": "Focus on the first principles behind derivations, not rote memorization."
+    },
+    {
+      "id": "q2",
+      "author": "Srinivasa Ramanujan",
+      "subject": "Mathematics",
+      "role": "Legendary Mathematician",
+      "text": "An equation for me has no meaning unless it expresses a thought of God.",
+      "context": "Look for symmetries and underlying beauty in every algebraic and trigonometric pattern."
+    },
+    {
+      "id": "q3",
+      "author": "Marie Curie",
+      "subject": "Chemistry",
+      "role": "Double Nobel Laureate",
+      "text": "Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.",
+      "context": "Conquer difficult concepts in Equilibrium and Organic Mechanisms one step at a time."
+    },
+    {
+      "id": "q4",
+      "author": "Albert Einstein",
+      "subject": "Physics",
+      "role": "Father of Modern Physics",
+      "text": "Pure mathematics is, in its way, the poetry of logical ideas.",
+      "context": "Kinematics and Calculus are simply geometry in motion."
+    },
+    {
+      "id": "q5",
+      "author": "Werner Heisenberg",
+      "subject": "Physics & Chemistry",
+      "role": "Nobel Laureate, Quantum Pioneer",
+      "text": "What we observe is not nature itself, but nature exposed to our method of questioning.",
+      "context": "Structure of Atom is a dance of probabilities and quantum numbers."
+    },
+    {
+      "id": "q6",
+      "author": "Leonhard Euler",
+      "subject": "Mathematics",
+      "role": "Master of Mathematical Analysis",
+      "text": "Logic is the foundation of the certainty to which the conclusions in the sciences reach.",
+      "context": "Permutations and Combinations reward disciplined, structured logic."
+    },
+    {
+      "id": "q7",
+      "author": "J. Willard Gibbs",
+      "subject": "Chemistry & Physics",
+      "role": "Founder of Chemical Thermodynamics",
+      "text": "Mathematics is a language. In Thermodynamics, entropy is the arrow of time.",
+      "context": "Remember: spontaneous reactions always maximize universal entropy (ΔS_total > 0)."
+    },
+    {
+      "id": "q8",
+      "author": "Isaac Newton",
+      "subject": "Physics & Maths",
+      "role": "Architect of Classical Mechanics",
+      "text": "If I have seen further it is by standing on the shoulders of Giants.",
+      "context": "Master the 3 Laws of Motion and Calculus, and all of classical physics will click into place."
+    },
+    {
+      "id": "q9",
+      "author": "Dmitri Mendeleev",
+      "subject": "Chemistry",
+      "role": "Creator of the Periodic Table",
+      "text": "Work, look for peace and calm in work; you will find it nowhere else.",
+      "context": "Mastering periodic trends turns chemical reactivity into an intuitive map."
+    },
+    {
+      "id": "q10",
+      "author": "Carl Friedrich Gauss",
+      "subject": "Mathematics",
+      "role": "Prince of Mathematicians",
+      "text": "Mathematics is the queen of the sciences and number theory is the queen of mathematics.",
+      "context": "Sequences, Series, and Binomial expansions contain boundless harmonic structure."
+    }
+  ],
+  "mindBenders": [
+    {
+      "id": "mb-1",
+      "subject": "Physics",
+      "topic": "Kinematics & Acceleration",
+      "title": "Can Acceleration Be Non-Zero When Velocity Is Exactly Zero?",
+      "teaser": "Think of a ball thrown vertically upward at the very peak of its trajectory.",
+      "explanation": "Yes! At the highest point, velocity momentarily passes through zero (v = 0), but the gravitational acceleration remains downward at g = 9.8 m/s². If acceleration were zero at the top, the ball would remain suspended in mid-air forever!"
+    },
+    {
+      "id": "mb-2",
+      "subject": "Chemistry",
+      "topic": "Thermodynamics & Spontaneity",
+      "title": "Why Does Ice Spontaneously Melt at Room Temp Even Though Melting Is Endothermic?",
+      "teaser": "ΔH is positive (heat is absorbed), so why does it happen spontaneously without driving it?",
+      "explanation": "Because Gibbs energy ΔG = ΔH - TΔS! Liquid water has significantly higher entropy (randomness) than rigid ice (ΔS > 0). At T > 273.15 K, the TΔS term outweighs ΔH, making ΔG strictly negative and melting spontaneous."
+    },
+    {
+      "id": "mb-3",
+      "subject": "Mathematics",
+      "topic": "Limits & 0/0 Indeterminacy",
+      "title": "Why Is 0/0 Indeterminate While 0/5 is 0 and 5/0 is Undefined?",
+      "teaser": "0 divided by any number is 0, but any number divided by itself is 1. Which rule wins?",
+      "explanation": "0/0 is indeterminate because depending on the limiting rate at which the numerator and denominator approach zero, the limit can equal ANY real number! That's why we use algebraic factoring, rationalization, and standard limit theorems."
+    },
+    {
+      "id": "mb-4",
+      "subject": "Physics",
+      "topic": "Circular Motion & Inertia",
+      "title": "Does Centrifugal Force Actually Exist in an Inertial Frame?",
+      "teaser": "When you turn sharply in a car, you feel pushed outward. Is a real outward force acting on you?",
+      "explanation": "No! From ground frame, only the centripetal inward force (friction/seatbelt) is real. The 'outward push' is your body's own inertia (Newton's 1st Law) wanting to continue in a straight line tangent to the circle. Centrifugal force is a pseudo-force used only in rotating non-inertial frames."
+    },
+    {
+      "id": "mb-5",
+      "subject": "Chemistry",
+      "topic": "Periodic Properties & Radii",
+      "title": "Why Is the Electron Gain Enthalpy of Chlorine More Negative Than Fluorine?",
+      "teaser": "Fluorine is the most electronegative element, so shouldn't it release the most energy when taking an electron?",
+      "explanation": "Fluorine is extremely compact (2p subshell). Adding an electron causes intense inter-electronic repulsion in its tiny valence shell. Chlorine (3p subshell) is larger, so it accommodates the incoming electron with much lower repulsion, releasing more energy!"
+    }
+  ],
+  "sessionModes": [
+    {
+      "id": "deep-focus",
+      "name": "Deep Conceptual Immersion",
+      "icon": "BrainCircuit",
+      "color": "#00f2fe",
+      "badge": "Monk Mode",
+      "duration": 50,
+      "break": 10,
+      "affirmation": "Zero distractions. We construct deep mental representations of physical & mathematical realities.",
+      "recommendedSound": "binaural-40hz"
+    },
+    {
+      "id": "rapid-problem-solving",
+      "name": "Speed Problem Solving & Drills",
+      "icon": "Zap",
+      "color": "#10b981",
+      "badge": "High Velocity",
+      "duration": 30,
+      "break": 5,
+      "affirmation": "Pattern recognition, fast formula recall, and rapid numerical execution.",
+      "recommendedSound": "synthwave-focus"
+    },
+    {
+      "id": "concept-breakthrough",
+      "name": "Hard Topic Breakthrough",
+      "icon": "Sparkles",
+      "color": "#c084fc",
+      "badge": "Deep Mastery",
+      "duration": 45,
+      "break": 10,
+      "affirmation": "No fear of complexity. We dissect tough derivations and mechanisms until crystal clear.",
+      "recommendedSound": "rain-ambient"
+    },
+    {
+      "id": "exam-revision-surge",
+      "name": "NCERT Exam & Revision Surge",
+      "icon": "Flame",
+      "color": "#f59e0b",
+      "badge": "Retention Mode",
+      "duration": 25,
+      "break": 5,
+      "affirmation": "Active recall, formula verification, and bulletproof exam confidence.",
+      "recommendedSound": "cyber-drone"
+    }
+  ]
+}

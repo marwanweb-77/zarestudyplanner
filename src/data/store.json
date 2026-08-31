@@ -1,0 +1,24 @@
+{
+  "profile": {
+    "name": "Scholar",
+    "grade": "Grade 11",
+    "stream": "PCM (Physics, Chemistry, Maths)",
+    "targetHoursDaily": 4.5,
+    "streak": 0,
+    "xp": 0,
+    "level": "Quantum Initiate",
+    "joinedDate": "2026-08-31"
+  },
+  "sessions": [],
+  "topicProgress": {},
+  "quizResults": [],
+  "zareChat": [
+    {
+      "id": "zc-1",
+      "role": "assistant",
+      "text": "Greetings! I am Zare, your dedicated AI Study Assessor for Grade 11 NCERT. I monitor your study velocity across Physics, Chemistry, and Mathematics, evaluate concept retention, and test you with diagnostic NCERT quizzes.\n\nWhich topic would you like to assess or review today?",
+      "timestamp": 1788013857516
+    }
+  ],
+  "flashcards": []
+}
