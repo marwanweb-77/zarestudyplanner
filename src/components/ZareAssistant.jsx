@@ -248,14 +248,16 @@ export default function ZareAssistant({ analytics, onLaunchQuiz }) {
               </div>
               <div className="flex items-baseline gap-2 mb-2">
                 <span className="text-4xl font-extrabold text-white font-mono">
-                  {assessmentReport?.readinessScore || 78}%
+                  {assessmentReport?.readinessScore ?? 0}%
                 </span>
-                <span className="text-xs text-emerald-400 font-semibold">Strong Momentum</span>
+                <span className="text-xs text-emerald-400 font-semibold">
+                  {(assessmentReport?.readinessScore || 0) > 0 ? 'Strong Momentum' : 'Ready to Start'}
+                </span>
               </div>
               <div className="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
                 <div
                   className="h-full bg-gradient-to-r from-amber-400 to-emerald-400 rounded-full"
-                  style={{ width: `${assessmentReport?.readinessScore || 78}%` }}
+                  style={{ width: `${assessmentReport?.readinessScore ?? 0}%` }}
                 />
               </div>
               <p className="text-[11px] text-slate-400 mt-2">
@@ -306,19 +308,19 @@ export default function ZareAssistant({ analytics, onLaunchQuiz }) {
               <span className="text-xs text-slate-400 block mb-1">Retention Health</span>
               <span className="text-sm font-bold text-emerald-400 flex items-center gap-1.5">
                 <CheckCircle2 className="w-4 h-4" />
-                <span>Optimal (Spaced Active Recall)</span>
+                <span>{assessmentReport?.metrics?.retentionHealth || 'Ready for Study Sessions'}</span>
               </span>
             </div>
             <div className="p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
               <span className="text-xs text-slate-400 block mb-1">Total Hours Evaluated</span>
               <span className="text-xl font-extrabold text-white font-mono">
-                {assessmentReport?.metrics?.totalHoursLogged || 14.5} hrs
+                {assessmentReport?.metrics?.totalHoursLogged ?? 0} hrs
               </span>
             </div>
             <div className="p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
               <span className="text-xs text-slate-400 block mb-1">Average Diagnostic Accuracy</span>
               <span className="text-xl font-extrabold text-cyan-400 font-mono">
-                {assessmentReport?.metrics?.averageQuizAccuracy || '92%'}
+                {assessmentReport?.metrics?.averageQuizAccuracy || '0%'}
               </span>
             </div>
           </div>
@@ -334,9 +336,8 @@ export default function ZareAssistant({ analytics, onLaunchQuiz }) {
               </h4>
               <ul className="space-y-2 text-xs text-slate-300">
                 {(assessmentReport?.strengths || [
-                  'Consistent study streak and high-velocity problem solving.',
-                  'Solid mastery of foundation units: Dimensional analysis, Kinematics, Mole Concept.',
-                  'Clear understanding of standard trigonometric transformations.'
+                  'Fresh study space initialized and ready for Grade 11 NCERT tracking.',
+                  'Comprehensive syllabus matrix loaded across Physics, Chemistry, and Mathematics.'
                 ]).map((s, i) => (
                   <li key={i} className="flex items-start gap-2">
                     <span className="text-emerald-400 font-bold">•</span>

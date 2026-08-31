@@ -87,6 +87,7 @@ router.post('/sessions', (req, res) => {
     if (state.profile.xp > 6000) state.profile.level = 'NCERT Grandmaster';
     else if (state.profile.xp > 3500) state.profile.level = 'Quantum Scholar';
     else if (state.profile.xp > 1500) state.profile.level = 'Quantum Adept';
+    else state.profile.level = 'Quantum Initiate';
 
     // If topic provided, update its progress
     if (topicId) {
@@ -375,27 +376,30 @@ router.post('/zare/assess', (req, res) => {
 
   const avgQuizScore = quizzes.length
     ? Math.round(quizzes.reduce((acc, q) => acc + (q.percentage || 0), 0) / quizzes.length)
-    : 85;
+    : 0;
 
   // Compute readiness index
   const readinessIndex = Math.min(98, Math.round((totalMastered * 3.5) + (totalHours * 1.5) + (avgQuizScore * 0.3)));
 
   const assessmentReport = {
     assessedAt: new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }),
-    studentLevel: store.profile.level || 'Quantum Adept',
+    studentLevel: store.profile?.level || 'Quantum Initiate',
     readinessScore: readinessIndex,
     metrics: {
       totalHoursLogged: totalHours,
       totalSessionsCount: sessions.length,
       topicsMasteredCount: totalMastered,
       topicsNeedingRevision: needsRevisionCount,
-      averageQuizAccuracy: `${avgQuizScore}%`,
-      retentionHealth: needsRevisionCount > 3 ? 'Caution: Retention decay detected in 3+ topics' : 'Optimal: Active recall schedule in sync'
+      averageQuizAccuracy: quizzes.length ? `${avgQuizScore}%` : '0%',
+      retentionHealth: needsRevisionCount > 3 ? 'Caution: Retention decay detected in 3+ topics' : (sessions.length > 0 ? 'Optimal: Active recall schedule in sync' : 'Ready for initial study sessions')
     },
-    strengths: [
+    strengths: sessions.length > 0 ? [
       'Consistent daily study streak and disciplined focus sessions.',
       'Strong grasp of high-weightage foundation units (Vectors, Kinematics, Mole Concept, Basic Trigonometry).',
       'Effective balance between problem-solving drills and conceptual derivations.'
+    ] : [
+      'Fresh study space initialized and ready for Grade 11 NCERT tracking.',
+      'Comprehensive syllabus matrix loaded across Physics, Chemistry, and Mathematics.'
     ],
     growthAreas: [
       'Ionic Equilibrium (Buffer solutions and Salt hydrolysis calculations).',
@@ -446,7 +450,7 @@ router.post('/zare/chat', (req, res) => {
     const sessCount = (store.sessions || []).length;
     let mins = 0;
     (store.sessions || []).forEach(s => mins += Number(s.durationMinutes || 0));
-    responseText = `### 📊 Zare's Live Study Evaluation\n\n- **Total Study Hours:** ${(mins / 60).toFixed(1)} hrs across ${sessCount} logged sessions\n- **Active Streak:** ${store.profile?.streak || 0} days 🔥\n- **Scholar Level:** ${store.profile?.level || 'Quantum Adept'}\n\nYour study velocity is steady. Keep logging your daily study hours and take a 5-question chapter quiz every 3 sessions to lock concepts into long-term memory!`;
+    responseText = `### 📊 Zare's Live Study Evaluation\n\n- **Total Study Hours:** ${(mins / 60).toFixed(1)} hrs across ${sessCount} logged sessions\n- **Active Streak:** ${store.profile?.streak || 0} days 🔥\n- **Scholar Level:** ${store.profile?.level || 'Quantum Initiate'}\n\nYour study velocity is steady. Keep logging your daily study hours and take a 5-question chapter quiz every 3 sessions to lock concepts into long-term memory!`;
   } else {
     responseText = `### 🧠 Zare's Assessment Guidance\n\nRegarding **"${message}"**:\n\n1. **NCERT Conceptual Foundation:** Always map this to the specific NCERT textbook derivations.\n2. **Active Problem Solving:** After reading theory, solve at least 5 varied numerical problems immediately.\n3. **Spaced Repetition:** Revisit this topic on Day 1, Day 3, and Day 7 to counteract the Ebbinghaus forgetting curve.\n\nWould you like me to generate a tailored diagnostic quiz or detailed overview for this topic?`;
   }

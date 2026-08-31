@@ -15,9 +15,9 @@ import {
 import AmbientSound from './AmbientSound';
 
 export default function Navbar({ activeTab, setActiveTab, analytics, onOpenZareAssessment }) {
-  const streak = analytics?.profile?.streak ?? 6;
-  const totalHours = analytics?.totalHours ?? 14.5;
-  const level = analytics?.profile?.level ?? 'Quantum Adept';
+  const streak = analytics?.profile?.streak ?? 0;
+  const totalHours = analytics?.totalHours ?? 0;
+  const level = analytics?.profile?.level ?? 'Quantum Initiate';
 
   const navItems = [
     { id: 'studio', label: 'Study Studio', icon: Zap },

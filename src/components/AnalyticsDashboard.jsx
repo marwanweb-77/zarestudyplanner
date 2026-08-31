@@ -102,7 +102,9 @@ export default function AnalyticsDashboard({ analytics, sessions, onDeleteSessio
             <span className="text-3xl font-extrabold text-white font-mono">{streakDays}</span>
             <span className="text-sm font-semibold text-amber-400">consecutive days</span>
           </div>
-          <p className="text-[11px] text-amber-400/80 mt-2">Momentum is strong • Keep it rolling!</p>
+          <p className="text-[11px] text-amber-400/80 mt-2">
+            {streakDays > 0 ? 'Momentum is strong • Keep it rolling!' : 'Start your first focus session today to build momentum!'}
+          </p>
         </div>
 
         {/* Card 4: Level & XP */}
@@ -114,9 +116,9 @@ export default function AnalyticsDashboard({ analytics, sessions, onDeleteSessio
             </div>
           </div>
           <div className="flex items-baseline gap-2">
-            <span className="text-xl font-extrabold text-white">{profile.level || 'Quantum Adept'}</span>
+            <span className="text-xl font-extrabold text-white">{profile?.level || 'Quantum Initiate'}</span>
           </div>
-          <p className="text-[11px] text-slate-400 mt-2 font-mono">{profile.xp || 0} Total XP Earned</p>
+          <p className="text-[11px] text-slate-400 mt-2 font-mono">{profile?.xp || 0} Total XP Earned</p>
         </div>
 
       </div>
