@@ -17,6 +17,7 @@ import {
   BrainCircuit
 } from 'lucide-react';
 import { api } from '../services/api';
+import ReactMarkdown from 'react-markdown';
 
 export default function ZareAssistant({ analytics, onLaunchQuiz }) {
   const [messages, setMessages] = useState([
@@ -182,8 +183,8 @@ export default function ZareAssistant({ analytics, onLaunchQuiz }) {
                           : 'bg-gradient-to-r from-cyan-600/30 to-blue-600/30 border border-cyan-500/40 text-white shadow-md'
                       }`}
                     >
-                      <div className="whitespace-pre-wrap font-sans">
-                        {m.text}
+                      <div className="font-sans text-xs space-y-2 [&_h1]:text-base [&_h1]:font-extrabold [&_h1]:text-amber-300 [&_h2]:text-sm [&_h2]:font-bold [&_h2]:text-amber-300 [&_h3]:text-xs [&_h3]:font-bold [&_h3]:text-amber-300 [&_h3]:mt-2 [&_h3]:mb-1 [&_p]:leading-relaxed [&_ul]:list-disc [&_ul]:pl-4 [&_ul]:space-y-1 [&_ol]:list-decimal [&_ol]:pl-4 [&_ol]:space-y-1 [&_strong]:text-white [&_strong]:font-bold [&_code]:bg-slate-950/80 [&_code]:text-cyan-300 [&_code]:px-1.5 [&_code]:py-0.5 [&_code]:rounded [&_code]:font-mono [&_code]:text-[11px] [&_pre]:bg-slate-950/90 [&_pre]:p-2.5 [&_pre]:rounded-xl [&_pre]:overflow-x-auto [&_blockquote]:border-l-2 [&_blockquote]:border-amber-400/60 [&_blockquote]:pl-3 [&_blockquote]:italic [&_blockquote]:text-slate-300">
+                        <ReactMarkdown>{m.text}</ReactMarkdown>
                       </div>
                     </div>
                   </div>
